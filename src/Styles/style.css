@@ -21,7 +21,7 @@
   justify-content: flex-end;
   color: white;
   font-weight: bolder;
-  font-family: 'calculator', sans-serifs;
+  font-family: 'calculator', sans-serif;
   font-size: 1.7rem;
 }
 
@@ -29,7 +29,7 @@
   height: 90%;
   display: grid;
   grid-template-areas:
-  "AC masmin percentage division"
+    "AC masmin percentage division"
     "seven eight nine X"
     "four five six minus"
     "one two three add"
@@ -124,5 +124,5 @@
 
 .KeyBoard button:hover {
   transform: scale(0.95);
-  background-color: rgba(241, 0, 0, 0.089) ;
+  background-color: rgba(241, 0, 0, 0.089);
 }
