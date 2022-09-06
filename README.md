@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Math Magicians
 
-> Math Magicians
+> This is a powerfull calculator set up in React.
 
 
 ## Built With
