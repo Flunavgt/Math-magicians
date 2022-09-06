@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'calculator';
+  src: url('../assets/Technology-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+.calculatorMain {
+  width: 400px;
+  height: 400px;
+  background-color: lightgrey;
+}
+
+.display {
+  background-color: darkgrey;
+  margin: 0;
+  height: 10%;
+  padding: 5px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  font-weight: bolder;
+  font-family: 'calculator', sans-serifs;
+  font-size: 1.7rem;
+}
+
+.KeyBoard {
+  height: 90%;
+  display: grid;
+  grid-template-areas:
+  "AC masmin percentage division"
+    "seven eight nine X"
+    "four five six minus"
+    "one two three add"
+    "zero zero decimal equals";
+}
+
+.btnPad0 {
+  grid-area: zero;
+}
+
+.btnPad1 {
+  grid-area: one;
+}
+
+.btnPad2 {
+  grid-area: two;
+}
+
+.btnPad3 {
+  grid-area: three;
+}
+
+.btnPad4 {
+  grid-area: four;
+}
+
+.btnPad5 {
+  grid-area: five;
+}
+
+.btnPad6 {
+  grid-area: six;
+}
+
+.btnPad7 {
+  grid-area: seven;
+}
+
+.btnPad8 {
+  grid-area: eight;
+}
+
+.btnPad9 {
+  grid-area: nine;
+}
+
+.btnPadAdd {
+  grid-area: add;
+  background-color: orange;
+}
+
+.btnPadMinus {
+  grid-area: minus;
+  background-color: orange;
+}
+
+.btnPadDiv {
+  grid-area: division;
+  background-color: orange;
+}
+
+.btnPadMultiply {
+  grid-area: X;
+  background-color: orange;
+}
+
+.btnPadEqual {
+  grid-area: equals;
+  background-color: orange;
+}
+
+.btnPadPercentage {
+  grid-area: percentage;
+}
+
+.btnPadAllClear {
+  grid-area: AC;
+  background-color: red;
+}
+
+.btnPadMasMin {
+  grid-area: masmin;
+}
+
+.btnPadDecimal {
+  grid-area: decimal;
+}
+
+.KeyBoard button {
+  border: 1px solid rgb(238, 236, 236);
+}
+
+.KeyBoard button:hover {
+  transform: scale(0.95);
+  background-color: rgba(241, 0, 0, 0.089) ;
+}
