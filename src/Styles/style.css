@@ -6,13 +6,16 @@
 
 .calculatorMain {
   width: 400px;
-  height: 400px;
+  height: 450px;
   background-color: lightgrey;
+  border-radius: 12px;
+  border: 2px solid black;
+  padding: 1rem;
 }
 
 .display {
   background-color: darkgrey;
-  margin: 0;
+  margin: 0 0 8px 0;
   height: 10%;
   padding: 5px;
   text-align: right;
@@ -22,11 +25,11 @@
   color: white;
   font-weight: bolder;
   font-family: 'calculator', sans-serif;
-  font-size: 1.7rem;
+  font-size: 2rem;
+  border-radius: 8px;
 }
 
 .KeyBoard {
-  height: 90%;
   display: grid;
   grid-template-areas:
     "AC masmin percentage division"
@@ -36,8 +39,15 @@
     "zero zero decimal equals";
 }
 
+.KeyBoard button {
+  height: 78px;
+  font-size: 2rem;
+  border: 1px solid rgb(238, 236, 236);
+}
+
 .btnPad0 {
   grid-area: zero;
+  border-radius: 0 0 0 15px;
 }
 
 .btnPad1 {
@@ -99,6 +109,7 @@
 .btnPadEqual {
   grid-area: equals;
   background-color: orange;
+  border-radius: 0 0 15px 0;
 }
 
 .btnPadPercentage {
@@ -116,10 +127,6 @@
 
 .btnPadDecimal {
   grid-area: decimal;
-}
-
-.KeyBoard button {
-  border: 1px solid rgb(238, 236, 236);
 }
 
 .KeyBoard button:hover {
