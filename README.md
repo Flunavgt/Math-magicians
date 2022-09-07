@@ -10,27 +10,16 @@
 - React
 
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
 ## Getting Started
 
 
-To get a local copy up and running follow these simple example steps.(soon)
+To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+Clone this repository: https://github.com/Flunavgt/Math-magicians.git
 
-### Setup
+Install dependencies with: "npm i"
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+run on local server with: "npm start"
 
 
 
