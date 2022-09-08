@@ -1,39 +1,29 @@
-import React from 'react';
+import { useState } from 'react';
 import '../Styles/style.css';
 import calculate from '../logic/calculate';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: '',
-      next: '',
-      operation: '',
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+const Calculator = () => {
+  const [state, setState] = useState({ total: '', next: '', operation: '' });
 
-  handleClick(event) {
+  const handleClick = (event) => {
     const value = event.target.textContent;
-    const solution = calculate(this.state, value);
-    this.setState(solution);
-  }
+    const solution = calculate(state, value);
+    setState(solution);
+  };
 
-  render() {
-    const { total, next, operation } = this.state;
-    return (
-      <div className="calculatorMain">
-        <p className="display">
-          { total }
-          { operation }
-          { next }
-        </p>
-        <KeyBoard handler={this.handleClick} />
-      </div>
+  const { total, next, operation } = state;
+  return (
+    <div className="calculatorMain">
+      <p className="display">
+        { total }
+        { operation }
+        { next }
+      </p>
+      <KeyBoard handler={handleClick} />
+    </div>
 
-    );
-  }
-}
+  );
+};
 
 const KeyBoard = (props) => {
   const { handler } = props;
