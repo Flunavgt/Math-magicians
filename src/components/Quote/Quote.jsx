@@ -3,7 +3,7 @@ import './Quote.css';
 
 export default function Quote() {
   return (
-    <div>
+    <div className="quoteMathMag">
       <p>
         Mathematics is bit about numbers, equations, computations,
         or algoriths: it is about understanding.

@@ -1,0 +1,13 @@
+.quoteMathMag {
+  width: 90vw;
+  margin-inline: 5vw;
+  height: 85vh;
+}
+
+.quoteMathMag p {
+  text-align: center;
+  margin-top: 30%;
+  font-size: 1.5rem;
+  margin-inline: 5%;
+  font-family: 'Monaco', sans-serif;
+}

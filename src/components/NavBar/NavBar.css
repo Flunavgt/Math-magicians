@@ -2,12 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  width: 90vw;
+  margin-inline: 5vw;
 }
 
 h1 {
   font-size: 4rem;
   padding-left: 5px;
+  font-family: 'Monaco', sans-serif;
 }
 
 .links {
@@ -17,6 +19,8 @@ h1 {
 .home,
 .calculator {
   padding: 0 7px;
+  color: blue;
+  font-size: 1.25rem;
 }
 
 .calculator {
