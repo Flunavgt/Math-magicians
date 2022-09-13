@@ -1,0 +1,29 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin-inline: 5vw;
+}
+
+h1 {
+  font-size: 4rem;
+  padding-left: 5px;
+  font-family: 'Monaco', sans-serif;
+}
+
+.links {
+  padding: 5px;
+}
+
+.home,
+.calculator {
+  padding: 0 7px;
+  color: blue;
+  font-size: 1.25rem;
+}
+
+.calculator {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}

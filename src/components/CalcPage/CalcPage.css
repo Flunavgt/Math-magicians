@@ -1,0 +1,22 @@
+.calcPageArea {
+  width: 90vw;
+  margin-inline: 5vw;
+  display: flex;
+}
+
+.calcTitle {
+  width: 50%;
+  height: 70vh;
+}
+
+.calcTitle p {
+  margin: 10%;
+  font-size: 2.5rem;
+  font-family: 'Monaco', sans-serif;
+}
+
+.CalcMain {
+  margin: auto;
+  display: flex;
+  align-content: center;
+}
