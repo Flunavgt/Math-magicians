@@ -1,7 +1,7 @@
 import calculate from "../../../logic/calculate";
 
 describe ('calculate', () => {
-  it('Testing addition', () => {
+  it('Testing AC', () => {
     const obj = '';
     const buttonName = 'AC';
 
@@ -21,7 +21,7 @@ describe ('calculate', () => {
     expect(answer).toEqual({})
   });
 
-  it('testing button', () => {
+  it('testing Zero button', () => {
     const obj = '0';
     const buttonName = '0';
     expect(calculate(obj, buttonName)).toEqual({

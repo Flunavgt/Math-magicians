@@ -29,11 +29,11 @@ test('Calc page', () => {
 
 test('Calculator', () => {
   render(<Calculator />);
-  const btn = screen.getByText('1');
+  const btn = screen.getByText('2');
   userEvent.click(btn);
   const display = screen.getByTestId('display');
 
-  expect(screen.getByTestId('display')).toHaveTextContent('1');
+  expect(screen.getByTestId('display')).toHaveTextContent('2');
   
   
 });
