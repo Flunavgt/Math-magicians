@@ -13,17 +13,17 @@ test('renders learn react link', () => {
 });
 
 test('snapshot', () => {
-  const tree = render(<Home />)
+  const tree = render(<Home />);
   expect(tree).toMatchSnapshot();
 });
 
 test('Quote', () => {
-  const tree = render(<Quote />)
+  const tree = render(<Quote />);
   expect(tree).toMatchSnapshot();
 });
 
 test('Calc page', () => {
-  const tree = render(<CalcPage />)
+  const tree = render(<CalcPage />);
   expect(tree).toMatchSnapshot();
 });
 
@@ -31,9 +31,5 @@ test('Calculator', () => {
   render(<Calculator />);
   const btn = screen.getByText('2');
   userEvent.click(btn);
-  const display = screen.getByTestId('display');
-
   expect(screen.getByTestId('display')).toHaveTextContent('2');
-  
-  
 });
