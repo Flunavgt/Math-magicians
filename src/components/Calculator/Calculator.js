@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../../Styles/style.css';
 import calculate from '../../logic/calculate';
 
@@ -11,10 +11,36 @@ const Calculator = () => {
     setState(solution);
   };
 
+  const keycontrol = (event) => {
+    let buttonPress = event.key;
+
+    const regex = /([0-9]|\+|-|\*|\/|Enter|Backspace|\.|%)/g;
+    if (regex.test(buttonPress) === false) return;
+
+    if (buttonPress === 'Enter') {
+      buttonPress = '=';
+    }
+    if (buttonPress === 'Backspace') {
+      buttonPress = 'AC';
+    }
+    if (buttonPress === '/') {
+      buttonPress = '÷';
+    }
+    const solution = calculate(state, buttonPress);
+    setState(solution);
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', keycontrol);
+    return () => {
+      document.removeEventListener('keydown', keycontrol);
+    };
+  });
+
   const { total, next, operation } = state;
   return (
     <div className="calculatorMain">
-      <p className="display">
+      <p className="display" data-testid="display">
         { total }
         { operation }
         { next }
@@ -42,7 +68,7 @@ const KeyBoard = (props) => {
       <button type="button" onClick={handler} className="btnPadAdd">+</button>
       <button type="button" onClick={handler} className="btnPadMinus">-</button>
       <button type="button" onClick={handler} className="btnPadDiv">÷</button>
-      <button type="button" onClick={handler} className="btnPadMultiply">x</button>
+      <button type="button" onClick={handler} className="btnPadMultiply">*</button>
       <button type="button" onClick={handler} className="btnPadEqual">=</button>
       <button type="button" onClick={handler} className="btnPadPercentage">%</button>
       <button type="button" onClick={handler} className="btnPadAllClear">AC</button>
